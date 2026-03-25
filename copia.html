@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Escola de Crafting: HTML & CSS</title>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --mc-green: #55aa33;
+            --mc-dirt: #795548;
+            --mc-stone: #7d7d7d;
+            --mc-dark: #333;
+            --mc-text: #ffffff;
+        }
+
+        body {
+            background-color: #1e1e1e;
+            background-image: url('https://www.transparenttextures.com/patterns/dark-matter.png'); /* Efeito de textura */
+            color: var(--mc-text);
+            font-family: 'Press Start 2P', cursive;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        header {
+            text-align: center;
+            border: 6px solid #000;
+            background-color: var(--mc-stone);
+            padding: 20px;
+            box-shadow: inset -4px -4px #444, inset 4px 4px #aaa;
+            margin-bottom: 30px;
+            width: 80%;
+        }
+
+        h1 {
+            font-size: 20px;
+            text-shadow: 4px 4px #000;
+            color: #55ff55;
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            max-width: 1000px;
+        }
+
+        .block {
+            border: 6px solid #000;
+            padding: 20px;
+            image-rendering: pixelated;
+        }
+
+        /* Bloco de Grama (HTML) */
+        .html-block {
+            background-color: var(--mc-green);
+            border-top: 15px solid #71aa34;
+            box-shadow: inset -4px -4px #3d2923, 0 10px 0 var(--mc-dirt);
+        }
+
+        /* Bloco de Pedra (CSS) */
+        .css-block {
+            background-color: var(--mc-stone);
+            box-shadow: inset -4px -4px #444, inset 4px 4px #aaa;
+        }
+
+        h2 {
+            font-size: 14px;
+            margin-bottom: 15px;
+            text-decoration: underline;
+        }
+
+        p {
+            font-size: 10px;
+            line-height: 1.6;
+        }
+
+        .btn-craft {
+            display: inline-block;
+            margin-top: 15px;
+            padding: 10px;
+            background-color: #bcbcbc;
+            border: 4px solid #000;
+            color: #333;
+            text-decoration: none;
+            box-shadow: inset -2px -2px #888, inset 2px 2px #fff;
+            cursor: pointer;
+        }
+
+        .btn-craft:hover {
+            background-color: #888;
+            color: #fff;
+        }
+
+        footer {
+            margin-top: 40px;
+            font-size: 8px;
+            color: #aaa;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>MINECRAFT CODE SCHOOL</h1>
+        <p>Domine a arte de craftar a web!</p>
+    </header>
+
+    <div class="container">
+        <div class="block html-block">
+            <h2>📦 HTML: Os Blocos</h2>
+            <p>O HTML é como os blocos do seu inventário. Sem eles, você não tem paredes, nem chão, nem teto.</p>
+            <p><strong>Missão:</strong> Coloque as tags &lt;h1&gt; e &lt;p&gt; no mundo!</p>
+            <a href="#" class="btn-craft">Coletar Recurso</a>
+        </div>
+
+        <div class="block css-block">
+            <h2>🎨 CSS: As Texturas</h2>
+            <p>O CSS é o que define se o seu bloco será de madeira, diamante ou obsidiana. É o estilo!</p>
+            <p><strong>Missão:</strong> Mude a cor e o tamanho dos seus blocos.</p>
+            <a href="#" class="btn-craft">Aplicar Skin</a>
+        </div>
+    </div>
+
+    <footer>
+        Desenvolvido por Prof. Steve | Versão 1.20.Web
+    </footer>
+
+</body>
+</html>
