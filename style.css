@@ -7,6 +7,7 @@ body {
     background-color: black;
     color: white;
     font-family: "Press Start 2P", system-ui;
+    
 }
 
 header {
@@ -30,6 +31,8 @@ header {
     background-color: gray;
     box-sizing: border-box;
     box-shadow: inset -4px -4px #444, inset 4px 4px #aaa;
+    margin: auto;
+    
 }
 
 
